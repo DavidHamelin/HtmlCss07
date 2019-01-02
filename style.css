@@ -1,78 +1,87 @@
 ﻿body /* Toute la page */
 {
     display: flex; /* rendre "flex" les blocks : Utilisation de Flexbox */
-    margin: auto;
+    margin: auto; /* Design centré */
     width: 100%; /* ici, les pourcentages permettent d'adapter la largeur de la page à celle de l'écran */
-    height: 400px;
-    flex-wrap: wrap;
+    height: 400px; /* On définit la hauteur de la page */
+    flex-wrap: wrap; /* Les blocs passent à la ligne si il n'y a plus de place */
 }
-header
+header /* HAUT*/
 {
     display: flex;
     margin: auto;
     width: 100%;
     height: 10%;
 }
-#middle
+#green /* Partie du HAUT, gauche */
+{
+    width: 80%;
+    background: #2ECC71 fixed;
+}
+
+#blue /* Partie du HAUT, droite */
+{
+    width: 20%;
+    background: #2980B9 fixed;
+}
+#middle /* MILIEU*/
 {
     display: flex;
     width: 100%;
-    height: 35%;
+    height: 40%;
 }
-section
+nav /* MILIEU GAUCHE en rouge */
+{
+    width: 40%;
+    background: #E74C3C fixed;
+}
+section /* MILIEU DROITE */
 {
     display: flex;
     width: 100%;
     flex-direction: column;
 }
-article
+article /* MILIEU DROITE ligne du haut, 2 couleurs */
 {
     display: flex;
     width: 100%;
     height: 50%;
 }
-aside
+#orange /* MILIEU DROITE en haut à gauche */
 {
-    display: flex;
-    width: 100%;
-    height: 50%;
-}
-#green
-{
-    width: 80%;
-    background: #2ECC71 fixed;
-}
-#blue
-{
-    width: 20%;
-    background: #2980B9 fixed;
-}
-nav {
-    width: 35%;
-    background: #E74C3C fixed;
-}
-#orange {
     width: 100%;
     background: #E67E22 fixed;
 }
-#grey {
+
+#grey /* MILIEU DROITE en haut à droite */
+{
     width: 100%;
     background: #95A5A6 fixed;
 }
-#yellow {
+aside /* MILIEU DROITE ligne du bas, 3 couleurs */
+{
+    display: flex;
+    width: 100%;
+    height: 50%;
+}
+#yellow /* MILIEU DROITE en bas à gauche */
+{
     width: 100%;
     background: #F39C12 fixed;
 }
-#teal {
+#teal /* MILIEU DROITE en bas au centre */
+{
     width: 100%;
     background: #16A085 fixed;
 }
-#dark_orange {
+#dark_orange /* MILIEU DROITE en bas à droite */
+{
     width: 100%;
     background: #D35400 fixed;
 }
-footer {
+footer /* BAS */
+{
     width: 100%;
-    height: 55%;
+    height: 50%;
     background: #2C3E50 fixed;
 }
